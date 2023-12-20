@@ -19,12 +19,13 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 48px;
+  font-size: 36px; /* Adjust the font size as needed */
   color: var(--theme-color-2);
   margin-bottom: 15px;
-  position: static;
+  position: relative;
   padding: 0 0 0 1.5em;
   border-bottom: 3px solid var(--theme-color-2);
+  margin-top: 60px; /* Adjust the top margin as needed */
 }
 
 h1::before {
@@ -36,6 +37,7 @@ h1::before {
   font-size: 85%;
   color: var(--theme-color-2);
 }
+
 
 h2 {
   position: relative;
@@ -161,4 +163,23 @@ h1 span {
   .sma{
       display: block;
   }
+}
+
+#nav-buttons {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  padding: 10px;
+  z-index: 1000;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+#nav-buttons a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
 }
