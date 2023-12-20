@@ -22,7 +22,7 @@ h1 {
   font-size: 48px;
   color: var(--theme-color-2);
   margin-bottom: 15px;
-  position: relative;
+  position: static;
   padding: 0 0 0 1.5em;
   border-bottom: 3px solid var(--theme-color-2);
 }
@@ -145,4 +145,20 @@ u2 li::before {
   font-family: "Font Awesome 6 Free";
   font-weight: bold;
   content: "\f0ae";
+}
+
+h1 span {
+  display: block;
+}
+
+/*PCでは無効（改行しない）*/
+.sma{
+  display: none;
+}
+
+/*スマートフォンでは有効（改行する）*/
+@media screen and (max-width:768px) {
+  .sma{
+      display: block;
+  }
 }
