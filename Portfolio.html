@@ -38,6 +38,28 @@
       font-size: 18px;
       cursor: pointer;
     }
+
+    /* タイトルのスタイル */
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      color: var(--theme-color-2);
+      margin-bottom: 15px;
+      position: relative;
+      padding: 0 0 0 1.5em;
+      border-bottom: 3px solid var(--theme-color-2);
+      margin-top: 60px; /* タイトルを下に移動 */
+    }
+
+    h1::before {
+      position: center;
+      left: 0.4em;
+      font-weight: bold;
+      font-family: "Font Awesome 6 Free";
+      top: 0.2em;
+      font-size: 85%;
+      color: var(--theme-color-2);
+    }
   </style>
 </head>
 
@@ -54,6 +76,7 @@
   <p>
     高専での成果物やプロジェクトをこちらでご紹介します。
   </p>
+
 
 
   <!-- About Me セクション -->
