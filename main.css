@@ -30,7 +30,6 @@ h1 {
 
 h1::before {
   position: center;
-  left: 0.4em;
   font-weight: bold;
   font-family: "Font Awesome 6 Free";
   top: 0.2em;
