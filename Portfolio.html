@@ -158,6 +158,54 @@
       <!-- 必要に応じてスキルを追加 -->
     </ul>
   </section>
+  
+  <style>
+    /* 他のスタイルは省略 */
+
+    /* ページ上部に戻るボタンのスタイル */
+    #scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background-color: #394555;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ページ上部に戻るボタン -->
+  <button id="scroll-to-top" onclick="scrollToTop()">Top</button>
+
+  <!-- 他のコンテンツは省略 -->
+
+  <script>
+    // ページ上部にスクロールする関数
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // スクロールされたらボタンを表示
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      var scrollToTopButton = document.getElementById("scroll-to-top");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopButton.style.display = "block";
+      } else {
+        scrollToTopButton.style.display = "none";
+      }
+    }
+  </script>
 
 </body> <!-- ここまで本文終了 -->
 </html>
